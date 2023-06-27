@@ -11,6 +11,7 @@ public class Estacionamento {
     private String telefone;
     private ArrayList<Veiculo> veiculos;
     
+    
     public Estacionamento(String nome, String telefone) {
         this.nome = nome;
         this.telefone = telefone;
@@ -23,6 +24,11 @@ public class Estacionamento {
         veiculos.add(new Veiculo("aba-1123", "Modelo 3", "Fabricante 3", 2003, "Cor3"));
         veiculos.add(new Veiculo("bbc-1124", "Modelo 4", "Fabricante 4", 2004, "Cor4"));
         
+    }
+
+    public void setVeiculos(ArrayList<Veiculo> lista) {
+        veiculos.clear();
+        veiculos.addAll(lista);
     }
 
 
